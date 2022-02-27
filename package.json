@@ -4,7 +4,7 @@
   "private": true,
   "homepage": ".",
   "dependencies": {
-    "@craco/craco": "^6.1.1",
+    "@craco/craco": "^6.4.3",
     "conversational-form": "^1.0.2",
     "jwt-decode": "^3.1.2",
     "react": "^16.13.0",
