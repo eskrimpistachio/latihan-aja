@@ -10,8 +10,8 @@ export const oprecInfo = [
       "Open Recruitment Staff Ahli BEM FILKOM UB 2022 merupakan salah satu langkah awal untuk menjalankan roda organisasi dengan dimulainya periode kepengurusan dari BEM FILKOM UB 2022. Kegiatan ini dilaksanakan dengan melakukan penjaringan bagi mahasiswa FILKOM angkatan 2020 dan 2021 yang ingin berkontribusi menjadi staff ahli dalam BEM FILKOM 2022.",
     logo: "https://res.cloudinary.com/ewik/image/upload/v1643615575/aryakarsa_mqgum4.png", // gambar logo di home, login, dan robot image
     landingImage: `${process.env.PUBLIC_URL}/assets/OprecStaffAhli.jpg`,
-    closeDate: new Date("2022-02-17T23:59:59.999+07:00"),
-    announceDate: new Date("2022-02-21T16:00:00.999+07:00"),
+    closeDate: new Date("2022-02-28T23:59:59.999+07:00"),
+    announceDate: new Date("2022-02-28T16:00:00.999+07:00"),
     onlyFor: [20, 21], // Angkatan berapa yg diterima
     extends: true, //Extends atau tidak 
     timeline: [
@@ -193,18 +193,31 @@ export const oprecInfo = [
   },
   {
     id: "2022-OprecStaffMuda", // id oprec formatnya tahun-oprec
+<<<<<<< HEAD
     name: "Oprec Staff Muda", // nama buat di tentang
     title: [
       "Open Recruitment", // line 1
       "Staff Muda BEM FILKOM 2022", // line 2
+=======
+    name: "Oprec Staff Ahli", // nama buat di tentang & linimasa
+    title: [
+      "Open Recruitment", // line 1
+      "Staff Ahli BEM FILKOM 2022", // line 2
+>>>>>>> 40ed6923a4d6ae3c736cd50ee04c5720ab5b466f
     ],
     description:
       "Open Recruitment Staff Ahli BEM FILKOM UB 2022 merupakan salah satu langkah awal untuk menjalankan roda organisasi dengan dimulainya periode kepengurusan dari BEM FILKOM UB 2022. Kegiatan ini dilaksanakan dengan melakukan penjaringan bagi mahasiswa FILKOM angkatan 2020 dan 2021 yang ingin berkontribusi menjadi staff ahli dalam BEM FILKOM 2022.",
     logo: "https://res.cloudinary.com/ewik/image/upload/v1643615575/aryakarsa_mqgum4.png", // gambar logo di home, login, dan robot image
     landingImage: `${process.env.PUBLIC_URL}/assets/OprecStaffAhli.jpg`,
+<<<<<<< HEAD
     closeDate: new Date("2022-02-17T23:59:59.999+07:00"),
     announceDate: new Date("2022-02-21T16:00:00.999+07:00"),
     onlyFor: [20, 21], // Angkatan berapa yg diterima
+=======
+    closeDate: new Date("2022-02-28T23:59:59.999+07:00"),
+    announceDate: new Date("2022-02-28T16:00:00.999+07:00"),
+    onlyFor: [21], // Angkatan berapa yg diterima
+>>>>>>> 40ed6923a4d6ae3c736cd50ee04c5720ab5b466f
     extends: true, //Extends atau tidak 
     timeline: [
       { date: "12 - 17 Februari 2022", description: "Pendaftaran Online 📝" },
@@ -382,5 +395,9 @@ export const oprecInfo = [
       "Kamu belum berhasil lolos.",
       "Terimakasih telah berpartisipasi, tetap semangat, dan sampai bertemu di kesempatan selanjutnya! 😊",
     ],
+<<<<<<< HEAD
   }
+=======
+  },
+>>>>>>> 40ed6923a4d6ae3c736cd50ee04c5720ab5b466f
 ];
