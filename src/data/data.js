@@ -13,7 +13,7 @@ export const oprecInfo = [
     closeDate: new Date("2022-02-17T23:59:59.999+07:00"),
     announceDate: new Date("2022-02-21T16:00:00.999+07:00"),
     onlyFor: [20, 21], // Angkatan berapa yg diterima
-    extends: true, //Extends atau tidak
+    extends: true, //Extends atau tidak 
     timeline: [
       { date: "12 - 17 Februari 2022", description: "Pendaftaran Online 📝" },
       { date: "12 - 17 Februari 2022", description: "Pengumpulan Berkas 📋" },
