@@ -196,7 +196,7 @@ export const oprecInfo = [
     name: "Oprec Staff Muda", // nama buat di tentang
     title: [
       "Open Recruitment", // line 1
-      "Staff Muda BEM FILKOM 2022", // line 2
+      "Staff Muda BEM FILKOM 2022 ", // line 2
     ],
     description:
       "Open Recruitment Staff Ahli BEM FILKOM UB 2022 merupakan salah satu langkah awal untuk menjalankan roda organisasi dengan dimulainya periode kepengurusan dari BEM FILKOM UB 2022. Kegiatan ini dilaksanakan dengan melakukan penjaringan bagi mahasiswa FILKOM angkatan 2020 dan 2021 yang ingin berkontribusi menjadi staff ahli dalam BEM FILKOM 2022.",
