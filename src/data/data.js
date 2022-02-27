@@ -10,8 +10,8 @@ export const oprecInfo = [
       "Open Recruitment Staff Ahli BEM FILKOM UB 2022 merupakan salah satu langkah awal untuk menjalankan roda organisasi dengan dimulainya periode kepengurusan dari BEM FILKOM UB 2022. Kegiatan ini dilaksanakan dengan melakukan penjaringan bagi mahasiswa FILKOM angkatan 2020 dan 2021 yang ingin berkontribusi menjadi staff ahli dalam BEM FILKOM 2022.",
     logo: "https://res.cloudinary.com/ewik/image/upload/v1643615575/aryakarsa_mqgum4.png", // gambar logo di home, login, dan robot image
     landingImage: `${process.env.PUBLIC_URL}/assets/OprecStaffAhli.jpg`,
-    closeDate: new Date("2022-02-17T23:59:59.999+07:00"),
-    announceDate: new Date("2022-02-21T19:00:00.999+07:00"),
+    closeDate: new Date("2022-02-28T23:59:59.999+07:00"),
+    announceDate: new Date("2022-02-28T16:00:00.999+07:00"),
     onlyFor: [20, 21], // Angkatan berapa yg diterima
     extends: true, //Extends atau tidak
     timeline: [
@@ -42,6 +42,46 @@ export const oprecInfo = [
       " BIRO MEDINKRAF BAGIAN MEDIA KREATIF",
       " BIRO MEDINKRAF BAGIAN MEDIA INFORMASI",
     ], //pilihan divisi
+    alur: [
+      {
+        description:
+          "1. Peserta membuka link pendaftaran yang telah disediakan oleh BEM FILKOM (website ini)",
+      },
+      {
+        description:
+          "2. Peserta mengunduh dan mengisi berkas pendaftaran (dalam bentuk soft file)",
+        titleLink: "Download berkas soft file (email UB)",
+        link: "https://drive.google.com/drive/folders/1h2ddvVE9bB6Jj--KIK0nWyz41WfFdXjp?usp=sharing",
+      },
+      {
+        description:
+          "3. Peserta membaca Panduan Open Recruitment, serta membaca Peraturan Umum dan Kode Etik.",
+      },
+      {
+        description:
+          "4. Peserta mengunduh twibbon yang telah disediakan lalu mengunggah foto diri melalui media sosial instagram pribadi, serta tag akun instagram @bemfilkomub",
+        note: "Untuk mempermudah penggunaan twibbon, dapat mengakses link berikut:",
+        titleLink: "Twibbon Oprec",
+        link: "https://www.twibbonize.com/oprecstaff2022",
+      },
+      {
+        description:
+          "5. Peserta mengunggah berkas pendaftaran ke dalam Google Drive pribadi (akses link folder Google Drive wajib public/shareable)",
+      },
+      {
+        description:
+          "6. Peserta menyetujui surat pernyataan komitmen yang telah diisi serta menyetujui Peraturan Umum dan Kode Etik BEM FILKOM 2022.",
+      },
+      {
+        description:
+          "7. Peserta mengisi data diri dan mengunggah link Google Drive yang berisi berkas pendaftaran pada website BEM FILKOM 2022.",
+      },
+      {
+        description:
+          "8. Peserta akan mendapatkan informasi terkait jadwal interview.",
+        note: "NB: Pemberitahuan tentang jadwal interview akan diinformasikan paling lambat H+2 setelah peserta mendaftarkan diri melalui website BEM FILKOM 2022.",
+      },
+    ], //isi dari alur pendaftaran
     formFields: [
       {
         is_robot: true, //kalo bukan pertanyaan dari robot diilangin juga gpp
@@ -121,46 +161,6 @@ export const oprecInfo = [
         pattern: "/(drive.google.com)/", //pattern regex kalo perlu
       },
     ], //isi dari form field chat
-    alur: [
-      {
-        description:
-          "1. Peserta membuka link pendaftaran yang telah disediakan oleh BEM FILKOM (website ini)",
-      },
-      {
-        description:
-          "2. Peserta mengunduh dan mengisi berkas pendaftaran (dalam bentuk soft file)",
-        titleLink: "Download berkas soft file (email UB)",
-        link: "https://drive.google.com/drive/folders/1h2ddvVE9bB6Jj--KIK0nWyz41WfFdXjp?usp=sharing",
-      },
-      {
-        description:
-          "3. Peserta membaca Panduan Open Recruitment, serta membaca Peraturan Umum dan Kode Etik.",
-      },
-      {
-        description:
-          "4. Peserta mengunduh twibbon yang telah disediakan lalu mengunggah foto diri melalui media sosial instagram pribadi, serta tag akun instagram @bemfilkomub",
-        note: "Untuk mempermudah penggunaan twibbon, dapat mengakses link berikut:",
-        titleLink: "Twibbon Oprec",
-        link: "https://www.twibbonize.com/oprecstaff2022",
-      },
-      {
-        description:
-          "5. Peserta mengunggah berkas pendaftaran ke dalam Google Drive pribadi (akses link folder Google Drive wajib public/shareable)",
-      },
-      {
-        description:
-          "6. Peserta menyetujui surat pernyataan komitmen yang telah diisi serta menyetujui Peraturan Umum dan Kode Etik BEM FILKOM 2022.",
-      },
-      {
-        description:
-          "7. Peserta mengisi data diri dan mengunggah link Google Drive yang berisi berkas pendaftaran pada website BEM FILKOM 2022.",
-      },
-      {
-        description:
-          "8. Peserta akan mendapatkan informasi terkait jadwal interview.",
-        note: "NB: Pemberitahuan tentang jadwal interview akan diinformasikan paling lambat H+2 setelah peserta mendaftarkan diri melalui website BEM FILKOM 2022.",
-      },
-    ], //isi dari alur pendaftaran
     api: {
       auth: "https://bemfilkom-rest.vercel.app/auth",
       check: "https://bemfilkom-rest.vercel.app/check/2022/OprecStaffAhli", // Check if registrant is already registered
@@ -183,12 +183,12 @@ export const oprecInfo = [
     acceptMessage: [
       "Selamat!!!",
       "Kamu berhasil lolos menjadi Staff Ahli BEM FILKOM 2022! 🥳\n\n",
-      "Silahkan tunggu informasi selanjutnya melalui Email ya!",
+      "Untuk informasi lebih lanjut, kamu bisa join ke : \n <a target='_blank' href='https://intip.in/ciptakanperan' class='text-blue-800 font-bold'>intip.in/ciptakanperan</a> \n\n Jika ada masalah, kamu bisa hubungi narahubung line di bawah ini : \nratusalmaalk (Ratu) \naufaazz (Aufa) \ncesiliaaaaa (Cesil) \n\n Mari #CiptakanPeran! ",
     ],
     rejectMessage: [
       "Mohon maaf",
       "Kamu belum berhasil lolos.",
       "Terimakasih telah berpartisipasi, tetap semangat, dan sampai bertemu di kesempatan selanjutnya! 😊",
     ],
-  },
+  }
 ];

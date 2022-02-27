@@ -1,13 +1,12 @@
 import { useEffect, useState } from "react";
 import { useParams, useLocation } from "react-router";
-import { CheckUser, getUserData} from "../components/helpers/SessionHelper";
+import { CheckUser, getUserData } from "../components/helpers/SessionHelper";
 import { getPathName, getDataOprec } from "../components/helpers/DataHelper";
 
 const After = () => {
   const { year, oprec } = useParams();
   const pathname = getPathName(useLocation().pathname);
   const dataOprec = getDataOprec(`${year}-${oprec}`);
-
   const [announcement, setAnnouncement] = useState([
     "Harap tunggu",
     "Lagi loading nih...",
@@ -16,7 +15,7 @@ const After = () => {
 
   useEffect(() => {
     document.title = dataOprec ? `${dataOprec.title[0]} ${dataOprec.title[1]}` : 'Web Event Request BEM FILKOM 2022';
-  },[year, oprec])
+  }, [year, oprec])
 
   useEffect(() => {
     if (Object.keys(getUserData) < 1) return;
@@ -68,19 +67,25 @@ const After = () => {
               </h1>
               <div className="max-w-xl text-center">
                 <div className="flex flex-col justify-center md:justify-start text-md leading-snug tracking-tighter text-gray-900 mt-5 ml-1">
-                  <div className="flex flex-col space-y-3 p-4  bg-merahmuda text-white rounded-lg shadow-md transition ease-linear">
+                  {announcement[0] === "Selamat!!!" ? (<div className="flex flex-col space-y-3 p-4 bg-green-400 text-white rounded-lg shadow-md transition ease-linear">
                     <span className="font-bold">{announcement[1]}</span>
                     <p
                       className="whitespace-pre-wrap leading-normal"
                       dangerouslySetInnerHTML={{ __html: announcement[2] }}
                     />
-                  </div>
+                  </div>) : <div className="flex flex-col space-y-3 p-4 bg-merahmuda text-white rounded-lg shadow-md transition ease-linear">
+                    <span className="font-bold">{announcement[1]}</span>
+                    <p
+                      className="whitespace-pre-wrap leading-normal"
+                      dangerouslySetInnerHTML={{ __html: announcement[2] }}
+                    />
+                  </div>}
                 </div>
               </div>
             </div>
           </header>
-        </section></>) 
-        : 
+        </section></>)
+        :
         (<><section className="relative flex flex-col content-center justify-center flex-grow h-screen overflow-hidden bg-coffeetint">
           <div className="self-center max-w-5xl text-4xl text-center text-kuning font-bold">Halaman Tidak Ditemukan</div>
         </section></>)}
