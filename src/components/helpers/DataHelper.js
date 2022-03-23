@@ -105,7 +105,7 @@ const getFormFields = (data) => {
     if (item.hasOwnProperty("questions")) field["cf-questions"] = item.questions
     if (item.hasOwnProperty("placeholder")) field["cf-input-placeholder"] = item.placeholder
     if (item.hasOwnProperty("pattern")) field["pattern"] = item.pattern
-    if (["pilihan1", "divisi1", "proker"].includes(item.name)) {
+    if (["pilihan1", "divisi1"].includes(item.name)) {
       field["list"] = "options1"
       field["pattern"] = pattern
     }

@@ -61,8 +61,6 @@ const Home = () => {
               </h1>
               <div className="flex flex-col text-lg tracking-tight leading-relaxed text-justify text-white">
                 <p className="">{dataOprec.description1}</p><br/>
-                <p className="">{dataOprec.description2}</p><br/>
-                <p className="">{dataOprec.description3}</p>
               </div>
             </div>
           </section>
