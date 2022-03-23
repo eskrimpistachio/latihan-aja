@@ -60,7 +60,9 @@ const Home = () => {
                 <div className="w-12 h-1 mt-3 bg-biru mx-auto"></div>
               </h1>
               <div className="flex flex-col text-lg tracking-tight leading-relaxed text-justify text-white">
-                <p className="">{dataOprec.description}</p>
+                <p className="">{dataOprec.description1}</p><br/>
+                <p className="">{dataOprec.description2}</p><br/>
+                <p className="">{dataOprec.description3}</p>
               </div>
             </div>
           </section>
